@@ -30,5 +30,9 @@ namespace GUI
 
             DataContext = _gameSession;
         }
+        private void AddingEXP(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.ExperiencePoints = _gameSession.CurrentPlayer.ExperiencePoints + 10;
+        }
     }
 }
