@@ -48,7 +48,18 @@
             <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
             <Button Grid.Row="6" Grid.Column="1" Content="Add EXP" Click="AddingEXP"></Button>
         </Grid>
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="SpringGreen"/>
+        <Grid Grid.Row="1" Grid.Column="1" Background="SpringGreen">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <!-- 3/5ths and 2/5ths respectively -->
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="LightYellow"/>
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="PaleVioletRed"/>
 
