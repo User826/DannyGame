@@ -25,6 +25,8 @@ namespace Engine.ViewModels
             CurrentLocation.Name = "Home";
             CurrentLocation.Location_Row = 0;
             CurrentLocation.Location_Column = 0;
+            //CurrentLocation.ImageName = "C:/Project/DannyGame/Engine/Locations/Home.jpg";
+            CurrentLocation.ImageName = "/Engine;component/Locations/Home.jpg";
             CurrentLocation.Description = "Your Current Residence";
         }
     }
